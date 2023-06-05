@@ -1,0 +1,76 @@
+@ import url ('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap') ; 
+* { 
+  margem : 0 ;
+  preenchimento : 0 ;
+  tamanho da caixa : caixa de borda;
+  font-family : 'Open Sans' , sans-serif;
+}
+corpo { 
+  exibição : flexível;
+  itens de alinhamento : centro;
+  justificar-conteúdo : centro;
+  altura mínima : 100vh ;
+  plano de fundo : #E3F2FD ;
+}
+.wrapper { 
+  largura : 65vmin ;
+  altura : 70vmin ;
+  exibição : flexível;
+  estouro : oculto;
+  flex-direction : coluna;
+  justificar-conteúdo : centro;
+  raio da borda : 5px ;
+  fundo : #293447 ;
+  box-shadow : 0 20px 40px rgba ( 52 , 87 , 220 , 0.2 ) ;  
+}
+.game-details { 
+  cor : #B8C6DC ;
+  peso da fonte : 500 ;
+  tamanho da fonte : 1,2 rem ;
+  preenchimento : 20px 27px ; 
+  exibição : flexível;
+  justificar-conteúdo : espaço-entre;
+}
+.play-board { 
+  altura : 100% ;
+  largura : 100% ;
+  exibição : grade;
+  fundo : #212837 ;
+  modelo de grade : repetir ( 30 , 1 fr ) / repetir ( 30 , 1 fr ) ;
+}
+.tabuleiro .comida {  
+  plano de fundo : #FF003D ;
+}
+.play-board .head {  
+  plano de fundo : #60CBFF ;
+}
+.controles { 
+  exibição : nenhum;
+  justificar-conteúdo : espaço-entre;
+}
+.controls i {  
+  preenchimento : 25px 0 ; 
+  alinhamento de texto : centro;
+  tamanho da fonte : 1,3 rem ;
+  cor : #B8C6DC ;
+  largura : calc ( 100% / 4 ) ;
+  cursor : ponteiro;
+  borda direita : 1px sólido #171B26 ;
+}
+@ tela de mídia e ( largura máxima : 800px ) {   
+  .wrapper { 
+    largura : 90vmin ;
+    altura : 115vmin ;
+  }
+  .game-details { 
+    tamanho da fonte : 1rem ;
+    preenchimento : 15px 27px ; 
+  }
+  .controles { 
+    exibição : flexível;
+  }
+  .controls i {  
+    preenchimento : 15px 0 ; 
+    tamanho da fonte : 1rem ;
+  }
+}
